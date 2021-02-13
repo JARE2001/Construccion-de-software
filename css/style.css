@@ -1,0 +1,29 @@
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #566b78;
+}
+
+h2 {
+    color:#6495ed;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+p {
+  color: gray;
+}
+
+.fondo_morado{
+  background-color: plum;
+}
+
+#titulo {
+  color: red;
+}
