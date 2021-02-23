@@ -42,8 +42,7 @@ function calcularTotal(){
     total.innerHTML += "Subtotal: "+ subtotal+ "<br><hr> ";
     total.innerHTML += "<p onmousemove ='descripcion(this)'>  IVA: "+ (subtotal*.16)+ " </p> <br><hr>";
     total.innerHTML += "Total: "+ (subtotal*.16 + subtotal);
-    
-}
+} 
 
  function crecer(boton){
     if(boton.style.fontSize == "50px")
