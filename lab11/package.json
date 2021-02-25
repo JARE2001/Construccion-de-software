@@ -1,0 +1,27 @@
+{
+  "name": "lab11",
+  "version": "1.0.0",
+  "description": "first app with express",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JARE2001/Construccion-de-software.git"
+  },
+  "author": "JARE2001",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JARE2001/Construccion-de-software/issues"
+  },
+  "homepage": "https://github.com/JARE2001/Construccion-de-software#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
