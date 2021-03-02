@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/labJScss.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <h1><a href="https://ejuarez.bitbucket.io/tec21/lab4IntroJS.html">Lab JS</a></h1>
+
+        <h2> Funciones:</h2>
+         <ul>
+             <li>generaTabla <button class="button" onclick = "generaTabla(this)">Run</button></li>
+             <table id="generaTabla"></table>
+             <li>randomSum <button class="button" onclick = "randomSum(this)">Run</button></li>
+             <p id = "randomSum"></p>
+             <li>contador <button class="button" onclick = "contador(this,[1,0,-4,2])">Run</button></li>
+             <p>input: [1,0,-4,2]</p>
+             <p id = "contador"></p>
+             <li>promedios <button class="button" onclick = "promedios(this, [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]])">Run</button></li>
+             <p>input: [[1,2,3,4], [5,6,7,8], [9,10,11,12], [13,14,15,16]]</p>
+             <p id = "promedios"></p>
+             <li>inverso <button class="button" onclick = "inverso(this, 1569203)">Run</button></li>
+             <p>input: 1569203</p>
+             <p id = "inverso"></p>
+             <li> Problema:<button class="button" onclick = "bubbleSort(this, [9,8,7,6,5,4,3,2,1])">Run</button></li>
+             <p>Ordenar con buble sort INPUT: un arreglo desordenado OUTPUT: arreglo ordenado</p>
+             <p>input = [9,8,7,6,5,4,3,2,1]</p>
+             <p id = "bubbleSort"></p>
+         </ul>
+         <div id="fondo-azul-claro">
+         <h2> Preguntas:</h2>
+         <h4>¿Qué diferencias y semejanzas hay entre Java y JavaScript?</h4>
+         <p> La principal diferencia entre java y javascript se encuentra en las variables en java se define simpre un tipo especifico para la variable mientaras que en javascript esto no se decide si hasta que se le da un valor a la variable</p>
+         <p>Por otro lado ambos  tienen una sintaxis similar a c y usan las mismas estructuras de control y delimitadores</p>
+         <h4>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)</h4>
+         <ol>
+             <li>getSeconds()	Returns the seconds (from 0-59)</li>
+             <li>toLocaleTimeString()	Returns the time portion of a Date object as a string, using locale conventions </li>
+             <li>setDate()	Sets the day of the month of a date object</li>
+             <li>getUTCDate()	Returns the day of the month, according to universal time (from 1-31)</li>
+             <li>now()	Returns the number of milliseconds since midnight Jan 1, 1970</li>
+         </ol>
+         <h4>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</h4>
+         <ol>
+             <li>concat()	Joins two or more arrays, and returns a copy of the joined arrays</li>
+             <li>forEach()	Calls a function for each array element</li>
+             <li>map()	Creates a new array with the result of calling a function for each array element</li>
+             <li>pop()	Removes the last element of an array, and returns that element</li>
+             <li>copyWithin()	Copies array elements within the array, to and from specified positions</li>
+         </ol>
+         <h4>¿Cómo se declara una variable con alcance local dentro de una función?</h4>
+         <p> utilizando la palabla reservada let</p>
+         <h4>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</h4>
+         <p> El codigo se se puede volver mas facil de hackera pus la variable sigue existiendo mientras la funcion este en ejecucion y puede ser modificada desde consola</p>
+         </div>
+         <script type = "text/javascript" src = "js/script.js"></script>
+    
+    </body>
+</html>
