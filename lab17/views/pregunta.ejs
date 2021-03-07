@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta</title>
+</head>
+<body>
+    <header>
+        <h1>Preguntas:</h1>
+    </header>
+    <h3>¿Qué ventajas tiene escribir el código SQL únicamente en la capa del modelo?</h3>
+    <ul>
+        <li>Poder hacer cambios a la base de datos sin tener que modificar otras capas</li>
+        <li>El codigo se modular por lo que es más mantenible</li>
+        <li>Permite escalar la aplicacion facilmente</li>
+    </ul>
+    <h3>¿Qué es SQL injection y cómo se puede prevenir?</h3>
+    <ul>
+        <li>SQL injection es un practica que consite en utilizar la propia intefax de la aplicacion web apra meter codigo al sitema y poder hackearlo como por ejemplo un DROP TABLES</li>
+        <li>Se puede prevenir controlando la informacion que el usuario puede introducir al sitema y filtrandola para asegurarnos que no sea codigo</li>
+        <li>En el caso de ejs lo logramos utilizando el simbolo = en vez  de utilizar - para introduccion de variables capturadas por el usuario/li>
+    </ul>
+    <%- include('includes/base.ejs'); %>
+</body>
+</html>
