@@ -1,0 +1,57 @@
+ ¿Cuál es? 
+ La clave esta repetida
+ ¿A qué se debe?
+ a que no se definió clave como primary key
+
+ ¿Qué ocurrió?
+ No se pudo hacer el insetr pues la key que dimos viola las reglas de una primary kery
+
+ ¿Qué información muestra esta consulta?
+ muestra la información sobre cada columna de la tabla y sus restriciones
+
+ ¿Qué sentencias utilizaste para definir las llaves primarias?
+Utilice ALTER TABLE *nombreTabla* add constraint llave*nombreTabla* PRIMARY KEY (*columna llave*)
+¿Qué sentencias utilizaste para definir este constrait?
+ALTER TABLE Entregan add constraint llaveProveedores FOREIGN KEY (RFC) REFERENCES Proveedores(RFC)
+ALTER TABLE Entregan add constraint llaveProyectos FOREIGN KEY (Numero) REFERENCES Proyectos(Numero)
+ALTER TABLE Entregan add constraint llaveMateriales FOREIGN KEY (Clave) REFERENCES Materiales(Clave)
+ALTER TABLE Entregan add constraint llaveEntregan PRIMARY KEY (RFC,Numero,Clave)
+
+¿Qué particularidad observas en los valores para clave, rfc y numero?
+no se relacionan con los registros de las tablas Materiales, Proveedores y Proyectos
+¿Cómo responde el sistema a la inserción de este registro?
+No hace nada al respecto permite insertar sin errores
+
+¿Qué significa el mensaje que emite el sistema?
+que no se puede hacer este registro porque las calve foranea  no existe en Materiales
+¿Qué significado tiene la sentencia anterior?
+la sentencia anterior declaro que la Clave es una llave provenienete de Materiales y que debe existir en esta tabla
+
+¿Qué significan las columnas de esas consultas?
+
+nos indican las llaves declaradas para cada tabla ya sean foraneas o primarias
+
+¿Qué uso se le está dando a GETDATE()?
+Se utiliza para sacar la fecha actual del sistema
+¿Tiene sentido el valor del campo de cantidad?
+no porque debe haber mas de 0 items
+
+¿Cómo responde el sistema?
+
+No te deja hacerlo  marca un error en la inserción
+
+¿Qué significa el mensaje?
+Que no se puenen insertar valores menores o iguales a 0
+
+
+Integridad Referencial
+
+Este concepto se refiere al manejo de la consistencia de datos entre las tablas.
+Es decir que si se indica que un dato hacer referecia al campo de otra de otra 
+esta efectivamente lo contega.El objetivo de esto es asegurar unicidad e integridad en los datos.
+
+Refrencias:
+
+Milagros Pacheco Castañeda. (2016). Lic. en Informática. Unam.mx. https://programas.cuaed.unam.mx/repositorio/moodle/pluginfile.php/1021/mod_resource/content/1/contenido/index.html
+
+‌
