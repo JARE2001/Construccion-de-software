@@ -1,0 +1,23 @@
+¿Que muestra la instrucción?
+
+Muestra las caracteristicas de la tabla especificada
+
+¿Qué efecto tuvo esta acción?
+
+Se crean las tablas dentro de la base de daotos
+
+¿Qué utilidad tiene esta manera de ejecutar los comandos de SQL?
+
+Es más mantenible y más rapido para ejecutar pues una vez escrito no se tiene que volver a escribir
+
+¿Qué relación tienen con las tablas de la base de datos? (checa su contenido)
+ 
+Los datos de los archivos que subimos sirven para poblar las tablas 
+
+¿Qué relación tiene el contenido de este archivo (materiales.sql) con el formato en que se encuentran los datos en el archivo materiales.csv?
+
+En cada bulk insert se especifica el archivo del que se van a cargar los datos y  el separador entre datos que es una coma y un /n para un nuevo registro
+
+¿Qué sucedió?
+
+Se muestran todos los registros de la tabla materiales con sus diferenetes campos
