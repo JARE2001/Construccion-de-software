@@ -1,5 +1,5 @@
-BULK INSERT a1702593.a1702593.[Materiales]
-   FROM 'e:\wwwroot\a1702593\materiales.csv'
+BULK INSERT a1701350.a1701350.[Materiales]
+   FROM 'e:\wwwroot\a1701350\materiales.csv'
    WITH
       (
          CODEPAGE = 'ACP',
@@ -7,8 +7,8 @@ BULK INSERT a1702593.a1702593.[Materiales]
          ROWTERMINATOR = '\n'
       )
 
-BULK INSERT a1702593.a1702593.[Proveedores]
-   FROM 'e:\wwwroot\a1702593\proveedores.csv'
+BULK INSERT a1701350.a1701350.[Proveedores]
+   FROM 'e:\wwwroot\a1701350\proveedores.csv'
    WITH
       (
          CODEPAGE = 'ACP',
@@ -16,8 +16,8 @@ BULK INSERT a1702593.a1702593.[Proveedores]
          ROWTERMINATOR = '\n'
       )
 
-BULK INSERT a1702593.a1702593.[Proyectos]
-   FROM 'e:\wwwroot\a1702593\proyectos.csv'
+BULK INSERT a1701350.a1701350.[Proyectos]
+   FROM 'e:\wwwroot\a1701350\proyectos.csv'
    WITH
       (
          CODEPAGE = 'ACP',
@@ -27,8 +27,8 @@ BULK INSERT a1702593.a1702593.[Proyectos]
 
 SET DATEFORMAT dmy
 
-BULK INSERT a1702593.a1702593.[Entregan]
-   FROM 'e:\wwwroot\a1702593\entregan.csv'
+BULK INSERT a1701350.a1701350.[Entregan]
+   FROM 'e:\wwwroot\a1701350\entregan.csv'
    WITH
       (
          CODEPAGE = 'ACP',
