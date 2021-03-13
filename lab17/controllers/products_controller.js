@@ -3,7 +3,6 @@ const Product = require("../models/product");
 exports.getInicio = (request, response) =>{ 
     Product.fetchAll()
         .then(([rows, fieldData])=>{
-            console.log (rows);
             response.render('inicio', { 
                 ropa : rows,
                 isLoggedIn: request.session.isLoggedIn === true ? true : false
@@ -35,7 +34,7 @@ exports.postNewProduct = (request, response,next) =>{
 
 exports.getProduct = (request, response, next) => {
     const id = request.params.product_id;
-    Personaje.fetchOne(id)
+    Product.fetchOne(id)
         .then(([rows, fieldData]) => {
             response.render('inicio', { 
                 ropa: rows,

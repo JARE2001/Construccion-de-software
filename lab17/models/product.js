@@ -17,8 +17,6 @@ module.exports =  class Product{
     }
 
     static fetchOne(id){
-        return db.execute('SELECT * FROM productos WHERE id = ?'
-        [id]
-        );
+        return db.execute('SELECT * FROM productos WHERE id=?',[id]);
     }
 }
