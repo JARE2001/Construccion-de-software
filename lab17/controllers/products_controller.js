@@ -45,3 +45,8 @@ exports.getProduct = (request, response, next) => {
             console.log(err);
         });
 };
+
+exports.postProduct = (request, response, next) => {
+    const id = request.params.product_id;
+    
+};
